@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Idea from "./components/Idea";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           count is {count}
         </button>
         <p>There will be some information about project.</p>
+        <Idea />
       </div>
     </>
   );
