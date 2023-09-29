@@ -12,7 +12,7 @@ export function Idea() {
       </section>
       <section>
         <h2>Our features</h2>
-        <ul className="features">
+        <ul>
           <li>
             <h3>Calendar</h3>
             <p>
