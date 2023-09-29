@@ -1,4 +1,4 @@
-function Idea() {
+export function Idea() {
   return (
     <>
       <section>
@@ -43,5 +43,3 @@ function Idea() {
     </>
   );
 }
-
-export default Idea;
