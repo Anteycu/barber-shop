@@ -1,16 +1,15 @@
-export function Barber({ barber }: { barber: { id: string } }) {
+import { Barber } from "../domains/barber/types";
+export function Barb({ name, services }: Barber) {
   return (
     <>
-      <h2>{barber.id}</h2>
-      <p>Occupation</p>
+      <h2>{name}</h2>
+      <p>Hairdresser-colorist</p>
       <ul>
         Services
-        <li>Haircut</li>
-        <li>Colorize</li>
+        {services.map((service, index) => (
+          <li key={index}>{service}</li>
+        ))}
       </ul>
     </>
   );
 }
-// props: {
-//   id: string;
-// }

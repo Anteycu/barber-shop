@@ -3,6 +3,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Barbers } from "./pages/Barbers";
 import { NotFound } from "./pages/NotFound";
+import { BARBERS } from "./domains/barber/constants";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/barbers" element={<Barbers />} />
+        <Route path="/barbers" element={<Barbers barbArr={BARBERS} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
