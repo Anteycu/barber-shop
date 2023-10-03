@@ -1,10 +1,16 @@
-import { Idea } from "./components/Idea";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Barbers } from "./pages/Barbers";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Barber Shop</h1>
-      <Idea />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/barbers" element={<Barbers />} />
+      </Routes>
     </>
   );
 }

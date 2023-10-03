@@ -1,6 +1,8 @@
-export function Idea() {
+import { Header } from "../components/header";
+export function About() {
   return (
     <>
+      <Header />
       <section>
         <h2>Our mission</h2>
         <p>
