@@ -3,7 +3,7 @@ export function Home() {
   //   <NavLink></NavLink>;
   return (
     <>
-      <a href="/">Home</a>
+      <p>Welcome to my wonderful barber app xD</p>
     </>
   );
 }
