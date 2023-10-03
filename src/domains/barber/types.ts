@@ -1,3 +1,5 @@
 export type Barber = {
-    id: string
+    id: string,
+    name: string,
+    services: string[],
 }

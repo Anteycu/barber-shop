@@ -1,13 +1,14 @@
-import { BARBERS } from "../domains/barber/constants";
-import { Barber } from "../components/barber";
+import { Barb } from "../components/barber";
+import { Barber } from "../domains/barber/types";
 
-export function Barbers() {
-  BARBERS.map((barber) => {
-    <Barber barber={barber} />;
-  });
+export function Barbers({ barbArr }: { barbArr: Barber[] }) {
   return (
     <>
-      <Barber barber={{ id: "2" }} />
+      <ul>
+        {barbArr.map((barber: Barber) => (
+          <Barb key={barber.id} {...barber} />
+        ))}
+      </ul>
     </>
   );
 }
