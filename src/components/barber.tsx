@@ -1,15 +1,20 @@
 import { Barber } from "../domains/barber/types";
-export function Barb({ name, services }: Barber) {
+
+type Props = {
+  barber: Barber;
+};
+
+export function BarberItem({ barber: { name, services } }: Props) {
   return (
-    <>
+    <div>
       <h2>{name}</h2>
       <p>Hairdresser-colorist</p>
+      <p> Services</p>
       <ul>
-        Services
-        {services.map((service, index) => (
-          <li key={index}>{service}</li>
+        {services.map((service) => (
+          <li key={service}>{service}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }

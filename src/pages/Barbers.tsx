@@ -1,14 +1,18 @@
-import { Barb } from "../components/barber";
+import { BarberItem } from "../components/barber";
 import { Barber } from "../domains/barber/types";
 
-export function Barbers({ barbArr }: { barbArr: Barber[] }) {
+type Props = {
+  barbers: Barber[];
+};
+
+export function Barbers({ barbers }: Props) {
   return (
-    <>
+    <div>
       <ul>
-        {barbArr.map((barber: Barber) => (
-          <Barb key={barber.id} {...barber} />
+        {barbers.map((barber: Barber) => (
+          <BarberItem key={barber.id} barber={barber} />
         ))}
       </ul>
-    </>
+    </div>
   );
 }

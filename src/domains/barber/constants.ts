@@ -1,4 +1,5 @@
-export const BARBERS = [
+import { Barber } from "./types"
+export const BARBERS: Barber[] = [
     {
         id: '1',
         name: "Cecelia Waugh",

@@ -1,8 +1,7 @@
-import { Header } from "../components/header";
 export function About() {
   return (
-    <>
-      <Header />
+    <div>
+      <h1 className="text-3xl font-bold">Barber Shop</h1>;
       <section>
         <h2>Our mission</h2>
         <p>
@@ -42,6 +41,6 @@ export function About() {
           </li>
         </ul>
       </section>
-    </>
+    </div>
   );
 }

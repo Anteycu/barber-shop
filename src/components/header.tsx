@@ -1,3 +1,10 @@
+import { NavLink } from "react-router-dom";
 export function Header() {
-  return <h1 className="text-3xl font-bold">Barber Shop</h1>;
+  return (
+    <nav>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/barbers">Barbers</NavLink>
+    </nav>
+  );
 }
