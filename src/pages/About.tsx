@@ -1,6 +1,7 @@
-export function Idea() {
+export function About() {
   return (
-    <>
+    <div>
+      <h1 className="text-3xl font-bold">Barber Shop</h1>;
       <section>
         <h2>Our mission</h2>
         <p>
@@ -40,6 +41,6 @@ export function Idea() {
           </li>
         </ul>
       </section>
-    </>
+    </div>
   );
 }

@@ -1,10 +1,21 @@
-import { Idea } from "./components/Idea";
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/header";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Barbers } from "./pages/Barbers";
+import { NotFound } from "./pages/NotFound";
+import { BARBERS } from "./domains/barber/constants";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Barber Shop</h1>
-      <Idea />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/barbers" element={<Barbers barbers={BARBERS} />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }
