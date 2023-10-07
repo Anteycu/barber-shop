@@ -5,6 +5,7 @@ import { About } from "./pages/About";
 import { Barbers } from "./pages/Barbers";
 import { NotFound } from "./pages/NotFound";
 import { BARBERS } from "./domains/barber/constants";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/barbers" element={<Barbers barbers={BARBERS} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
