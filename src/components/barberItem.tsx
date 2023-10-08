@@ -6,8 +6,8 @@ type Props = {
 
 export function BarberItem({ barber: { name, services } }: Props) {
   return (
-    <div>
-      <h2>{name}</h2>
+    <div className="text-base font-medium text-yellow-900">
+      <h2 className="text-xl text-yellow-800">{name}</h2>
       <p>Hairdresser-colorist</p>
       <p> Services</p>
       <ul>

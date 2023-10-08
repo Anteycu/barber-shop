@@ -2,9 +2,11 @@ import { Container } from "../components/container";
 export function About() {
   return (
     <div>
-      <section className="pt-8 pb-8">
+      <section className="pt-8 pb-8 text-lg font-medium text-yellow-900">
         <Container>
-          <h1>Mission of the Chocolate Woods</h1>
+          <h1 className="text-2xl text-yellow-800">
+            Mission of the Chocolate Woods
+          </h1>
           <p>
             Our mission is to help beauty professionals save time. Thats why I
             want to create app that allows them to manage their clients easily.
@@ -13,19 +15,19 @@ export function About() {
           </p>
         </Container>
       </section>
-      <section>
+      <section className="pt-8 pb-8 text-lg font-medium text-yellow-900">
         <Container>
-          <h2>Our features</h2>
+          <h2 className="text-2xl text-yellow-800">Our services</h2>
           <ul>
             <li>
-              <h3>Calendar</h3>
+              <h3 className="text-xl">Calendar</h3>
               <p>
                 Useful instrument for planing your work time. Setting and
                 understanding your vacant hours for different client orders.
               </p>
             </li>
             <li>
-              <h3>Balance</h3>
+              <h3 className="text-xl">Balance</h3>
               <p>Help to count your great profit.</p>
             </li>
             <li>
@@ -36,7 +38,7 @@ export function About() {
               </p>
             </li>
             <li>
-              <h3>Client base</h3>
+              <h3 className="text-xl">Client base</h3>
               <p>
                 Accumulate information from registered users and helps beauty
                 professionalists to keep in touch with their clients.
