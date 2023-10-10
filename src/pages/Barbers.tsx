@@ -1,12 +1,8 @@
-import { BarberItem } from "../components/barberItem";
 import { Container } from "../components/container";
-import { Barber } from "../domains/barber/types";
+import { BARBERS } from "../domains/barber/constants";
+import { BarbersList } from "../components/barbersList";
 
-type Props = {
-  barbers: Barber[];
-};
-
-export function Barbers({ barbers }: Props) {
+export function Barbers() {
   return (
     <div>
       <section className="pt-8 pb-8">
@@ -19,10 +15,8 @@ export function Barbers({ barbers }: Props) {
               Ukrainian barbering traditions.
             </p>
           </div>
-          <ul className="grid grid-cols-3 gap-y-20">
-            {barbers.map((barber: Barber) => (
-              <BarberItem key={barber.id} barber={barber} />
-            ))}
+          <ul className="grid grid-cols-3 gap-y-20 gap-x-40">
+            <BarbersList barbers={BARBERS} />
           </ul>
         </Container>
       </section>
