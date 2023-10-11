@@ -1,16 +1,20 @@
+import { cn } from "../utilities/cn";
 interface Props {
-  children: string;
+  children: React.ReactNode;
   title: string;
   src: string;
-  order?: string;
+  className?: string;
 }
 
-export const FeatureItem = ({ children, title, src, order }: Props) => {
+export const FeatureItem = ({ children, title, src, className }: Props) => {
   return (
     <div
-      className={`flex ${order} justify-around items-center mb-20 text-xl font-medium text-yellow-900`}
+      className={cn(
+        "flex justify-around items-center mb-40 text-xl font-medium text-yellow-900",
+        className
+      )}
     >
-      <img className="w-1/3 rounded-4xl" src={src} alt="Barber works" />
+      <img className="w-1/2 rounded-3xl" src={src} alt="Barber works" />
       <div className="w-1/3">
         <h2 className="text-3xl">{title}</h2>
         <p>{children}</p>

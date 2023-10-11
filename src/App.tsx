@@ -19,7 +19,7 @@ function App() {
         <Route path="/barbers" element={<Barbers />} />
         <Route path="/barbers/:id" element={<BarberDetails />} />
         <Route path="/barbers/:id/booking" element={<Form />} />
-        <Route path="/barbers/:id/booking/bookings" element={<BookingItem />} />
+        <Route path="/barbers/:id/booking/view" element={<BookingItem />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

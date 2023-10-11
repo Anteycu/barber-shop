@@ -8,7 +8,7 @@ type Props = {
 export function BarberItem({ barber: { name, services, id } }: Props) {
   return (
     <div className="text-base font-medium">
-      <Link className="text-yellow-900 no-underline" to={`${id}`}>
+      <Link className="text-yellow-900 no-underline" to={id}>
         <h2 className="text-xl text-yellow-800">{name}</h2>
         <p>Hairdresser-colorist</p>
         <p> Services</p>

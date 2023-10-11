@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 interface Props {
-  children: string;
+  children: React.ReactNode;
   to: string;
 }
 
-export const CustomNavLink = ({ children, to }: Props) => {
+export const NavigationLink = ({ children, to }: Props) => {
   return (
     <NavLink
       to={to}

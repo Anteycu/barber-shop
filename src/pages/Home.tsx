@@ -17,7 +17,7 @@ export function Home() {
           <FeatureItem
             title="Unparalleled Tools for Smooth Operations"
             src="./src/assets/instruments.webp"
-            order="flex-row-reverse"
+            className="flex-row-reverse"
           >
             Calendar management, seamless online bookings, exquisite balance
             features, and an extensive client database—manage your barber shop

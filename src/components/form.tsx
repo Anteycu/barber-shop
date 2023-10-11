@@ -51,7 +51,7 @@ export const Form = () => {
           <input value={service} onChange={(e) => setService(e.target.value)} />
         </label>
         <button type="submit">Submit booking</button>
-        <Link to="bookings">Go to your booking</Link>
+        <Link to="view">Go to your booking</Link>
       </form>
     </div>
   );

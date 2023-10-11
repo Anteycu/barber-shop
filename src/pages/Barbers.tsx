@@ -15,9 +15,7 @@ export function Barbers() {
               Ukrainian barbering traditions.
             </p>
           </div>
-          <ul className="grid grid-cols-3 gap-y-20 gap-x-40">
-            <BarbersList barbers={BARBERS} />
-          </ul>
+          <BarbersList barbers={BARBERS} />
         </Container>
       </section>
     </div>

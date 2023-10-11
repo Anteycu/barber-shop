@@ -1,5 +1,5 @@
 import { Container } from "./container";
-import { CustomNavLink } from "./customNavLink";
+import { NavigationLink } from "./navigationLink";
 import { Logo } from "./logo";
 export function Header() {
   return (
@@ -8,9 +8,9 @@ export function Header() {
         <div className="flex justify-between items-baseline">
           <Logo />
           <nav className="flex gap-20">
-            <CustomNavLink to="/">Home</CustomNavLink>
-            <CustomNavLink to="/about">About</CustomNavLink>
-            <CustomNavLink to="/barbers">Barbers</CustomNavLink>
+            <NavigationLink to="/">Home</NavigationLink>
+            <NavigationLink to="/about">About</NavigationLink>
+            <NavigationLink to="/barbers">Barbers</NavigationLink>
           </nav>
         </div>
       </Container>
