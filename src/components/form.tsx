@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Form = () => {
   const [firstName, setFirstName] = useState("");
   const [secondName, setSecondName] = useState("");
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
+  const navigate = useNavigate();
 
   const reset = () => {
     setFirstName("");
@@ -23,6 +24,7 @@ export const Form = () => {
     };
     localStorage.setItem("clientInfo", JSON.stringify(clientInfo));
     reset();
+    navigate("view");
   };
 
   return (
@@ -51,7 +53,6 @@ export const Form = () => {
           <input value={service} onChange={(e) => setService(e.target.value)} />
         </label>
         <button type="submit">Submit booking</button>
-        <Link to="view">Go to your booking</Link>
       </form>
     </div>
   );
